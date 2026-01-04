@@ -1,0 +1,338 @@
+/* Product Section Styles */
+.product-section {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-top: 0;
+}
+
+.product-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* Product Card */
+.product-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Checkmark Icon */
+.product-check {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border: 2px solid #ff8c42;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.product-check svg {
+  color: #ff8c42;
+  width: 16px;
+  height: 16px;
+}
+
+/* On Sale Badge */
+.product-sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #7dd3c0;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* Discount Badge */
+.product-discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e63946;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 15px 0;
+  overflow: hidden;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin: 10px 0;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Product Badge */
+.product-badge {
+  background-color: #ff8c42;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+/* Price Section */
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.current-price_p {
+  font-size: 17px;
+  font-weight: 700;
+  color: #333;
+}
+
+.original-price_p {
+  font-size: 15px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Quick Add Button */
+.quick-add-btn {
+  width: 100%;
+  background-color: #ff8c42;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.quick-add-btn:hover {
+  background-color: #ff6f1e;
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .product-title {
+    font-size: 28px;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-section {
+    padding: 30px 15px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .product-card {
+    padding: 12px;
+  }
+
+  .product-image {
+    height: 150px;
+    margin: 25px 0 10px 0;
+  }
+
+  .product-name {
+    font-size: 14px;
+    min-height: 35px;
+  }
+
+  .current-price {
+    font-size: 16px;
+  }
+
+  .original-price {
+    font-size: 13px;
+  }
+
+  .quick-add-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-section {
+    padding: 20px 10px;
+  }
+
+  .product-container {
+    padding: 0 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .product-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-check {
+    width: 24px;
+    height: 24px;
+  }
+
+  .product-check svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .product-sale-badge {
+    font-size: 9px;
+    padding: 3px 8px;
+  }
+
+  .product-discount-badge {
+    width: 45px;
+    height: 45px;
+    font-size: 9px;
+    padding: 6px;
+  }
+
+  .product-image {
+    height: 120px;
+    margin: 20px 0 8px 0;
+  }
+
+  .product-name {
+    font-size: 12px;
+    min-height: 30px;
+  }
+
+  .product-badge {
+    width: 35px;
+    height: 35px;
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .current-price {
+    font-size: 14px;
+  }
+
+  .original-price {
+    font-size: 12px;
+  }
+
+  .quick-add-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

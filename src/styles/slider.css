@@ -1,0 +1,53 @@
+/* Slider Section Styles */
+.slider-section {
+  width: 100%;
+  background-color: #fff;
+  /* padding: 140px 0 0 0; */
+  margin: 0;
+  padding: 140px 0 0 0;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* object-fit: cover; */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slider-section {
+    padding: 120px 0 0 0;
+  }
+  
+  .slider-image {
+    height: 250px;
+  }
+  
+  .slider-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-section {
+    padding: 110px 0 0 0;
+  }
+  
+  .slider-image {
+    height: 180px;
+  }
+}

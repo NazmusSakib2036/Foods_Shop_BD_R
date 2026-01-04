@@ -1,0 +1,354 @@
+/* Footer Styles */
+.footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-top: 0;
+}
+
+/* Main Footer Content */
+.footer-main {
+  width: 100%;
+  padding: 50px 40px;
+  background-color: #f5f5f5;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Company Info Section */
+.company-info {
+  padding-right: 40px;
+}
+
+.footer-logo img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.company-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.company-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff8c42;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff8c42;
+}
+
+/* DBID Section */
+.dbid-section {
+  text-align: left;
+}
+
+.dbid-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  width: 100%;
+  background-color: #ff8c42;
+  padding: 15px 40px;
+}
+
+.footer-bottom-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.social-icon a {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon a:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  flex: 1;
+}
+
+/* Fixed Chat Container */
+.fixed-chat-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 999;
+}
+
+.chat-button {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.chat-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chat-emoji {
+  font-size: 20px;
+}
+
+.chat-text {
+  font-weight: 600;
+}
+
+.messenger-button {
+  background-color: #ff8c42;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.messenger-button svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.messenger-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 140, 66, 0.5);
+}
+
+/* Scroll to Top Button */
+.scroll-top-button {
+  position: fixed;
+  bottom: 110px;
+  right: 30px;
+  background-color: #ff8c42;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 998;
+  color: white;
+}
+
+.scroll-top-button svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.scroll-top-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 140, 66, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .company-info {
+    grid-column: 1 / -1;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .company-description {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    padding: 12px 20px;
+  }
+
+  .footer-bottom-container {
+    padding: 0 10px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  .fixed-chat-container {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .chat-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .messenger-button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .scroll-top-button {
+    bottom: 90px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-main {
+    padding: 20px 10px;
+  }
+
+  .company-title {
+    font-size: 16px;
+  }
+
+  .company-description {
+    font-size: 12px;
+  }
+
+  .footer-heading {
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .dbid-text {
+    font-size: 16px;
+  }
+
+  .chat-button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .chat-emoji {
+    font-size: 18px;
+  }
+
+  .messenger-button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .messenger-button svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .scroll-top-button {
+    width: 45px;
+    height: 45px;
+    bottom: 90px;
+  }
+
+  .scroll-top-button svg {
+    width: 22px;
+    height: 22px;
+  }
+}
